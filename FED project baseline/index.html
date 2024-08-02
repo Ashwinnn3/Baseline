@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header class="header" data-aos="fade-down">
+        <nav class="navbar">
+            <div class="logo" data-aos="fade-right">
+                <img src="logo.png" alt="logo" width="200px">
+            </div>
+            <ul class="nav-links" data-aos="fade-left">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="home" class="welcome-section" data-aos="fade-up">
+            <div class="triangle-background"></div>
+            <div class="welcome-content" data-aos="zoom-in" data-aos-delay="300">
+                <h1>Welcome to <span class="highlight">Baseline</span></h1>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="400">Revolutionizing the way you work</p>
+                <button id="cta-button" data-aos="fade-up" data-aos-delay="500">Get Started</button>
+            </div>
+        </section>
+        <section id="about" class="about-section" data-aos="fade-up">
+            <div class="about-content">
+                <h2 data-aos="fade-up">About Baseline</h2>
+                <p class="about-intro" data-aos="fade-up" data-aos-delay="200">
+                    Baseline is a cutting-edge project management platform that revolutionizes the way teams collaborate, track progress, and deliver results.
+                </p>
+                <div class="about-features">
+                    <div class="about-feature" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Boost Productivity</h3>
+                        <p>Streamline workflows and eliminate bottlenecks to skyrocket your team's efficiency.</p>
+                    </div>
+                    <div class="about-feature" data-aos="fade-left" data-aos-delay="400">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Real-time Analytics</h3>
+                        <p>Gain actionable insights with our powerful, real-time data visualization tools.</p>
+                    </div>
+                    <div class="about-feature" data-aos="fade-right" data-aos-delay="500">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>Seamless Integration</h3>
+                        <p>Easily integrate with your favorite tools for a smooth, unified workflow experience.</p>
+                    </div>
+                    <div class="about-feature" data-aos="fade-left" data-aos-delay="600">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Enterprise-grade Security</h3>
+                        <p>Rest easy knowing your data is protected by state-of-the-art security measures.</p>
+                    </div>
+                </div>
+                <div class="about-cta" data-aos="zoom-in" data-aos-delay="700">
+                    <h3>Ready to transform your project management?</h3>
+                    <button class="cta-button">Start Your Free Trial</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="features" class="features-section" data-aos="fade-up">
+            <h2 data-aos="fade-up">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Task Management</h3>
+                    <p>Efficiently organize and track your tasks with our intuitive interface.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Seamlessly communicate and collaborate with your team members.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics</h3>
+                    <p>Gain valuable insights with our powerful analytics tools.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Customization</h3>
+                    <p>Tailor the platform to fit your specific needs and workflows.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" >
+            <h2 data-aos="fade-up">Contact Us</h2>
+            <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <input type="text" placeholder="Name" required data-aos="fade-right" data-aos-delay="300">
+                <input type="email" placeholder="Email" required data-aos="fade-left" data-aos-delay="400">
+                <textarea placeholder="Message" required data-aos="fade-up" data-aos-delay="500"></textarea>
+                <button type="submit" data-aos="fade-up" data-aos-delay="600">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer >
+        <p style="color: aqua;">&copy; 2024 Baseline Project. All rights reserved.</p>
+    </footer>
+
+    <div id="cursor"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 200
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
